@@ -223,6 +223,58 @@
             font-style: italic;
         }
 
+        /* Comments styling */
+        .comments {
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px dashed var(--border);
+        }
+
+        .comments-title {
+            font-size: 1.4rem;
+            margin-bottom: 1.5rem;
+            font-family: var(--font-serif);
+            color: var(--text-light);
+        }
+
+        .comment {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .comment:last-child {
+            border-bottom: none;
+        }
+
+        .comment-meta {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .comment-author {
+            font-weight: 600;
+            color: var(--accent);
+        }
+
+        .comment-date {
+            color: var(--text-muted);
+        }
+
+        .comment-content {
+            line-height: 1.6;
+        }
+
+        .comment-content p {
+            margin-bottom: 0.75rem;
+        }
+
+        .comment-content p:last-child {
+            margin-bottom: 0;
+        }
+
         footer {
             padding: 2rem 0;
             border-top: 1px solid var(--border);
@@ -272,9 +324,7 @@
     </header>
 
     <main class="container">
-
-<!-- First Try End -->
-      
+        <!-- Example article with comments -->
         <article class="post">
             <h2 class="post-title">Naiver Realismus</h2>
             <div class="post-meta">
@@ -290,541 +340,42 @@
                 <p>Es gibt grundlegend zwei Bereiche, in denen man versuchen kann, Wissen zu erlangen. Es gibt zum einen den Bereich, dessen Grundlagen durch den Menschen definiert wurden (A) und zum anderen jenen (B), in dem man versucht, diese zu erkennen, wie zum Beispiel den Bereich der Physik. Naiver Realismus würde bedeuten, B wie A zu behandeln. In Bereich A kann eine Aussage deshalb eindeutig als wahr oder falsch bezeichnet werden, weil die Grundlagen, die Bedingungen klar sind oder nötigenfalls definiert werden. In Bereich B hingegen ist die Grundlage „von sich aus" dynamisch. Sie hängt von einer Welt ab, die wir unter anderem mit technischen Hilfsmitteln zu durchleuchten versuchen, bei der wir uns aber nicht sicher sein können, dass wir alles, für eine Wahr-oder-Falsch-Aussage Notwendige, erfasst haben.</p>
                 <div class="post-source">Außzug aus der ca. ein Jahr alten, nicht mehr aktuellen Präambel der <a href="http://erisisch.de">erisischen Bewegung</a>. Unter Einbeziehung des <a href="https://d3v.at/erisisch/es/wiki/doku.php#verstaendnis">"Definitions-Trilemmas" (erisisch.de)</a> ist es natürlich fraglich, ob die Grundlagen in Bereich A so "klar" sind.</div>
             </div>
-        </article>
-
-        <article class="post">
-            <h2 class="post-title">Mutter Theresa und Dalai Lama</h2>
-            <div class="post-meta">
-                <span class="post-date">18. Mai 2008</span>
-                <div class="post-tags">
-                    <a href="#" class="tag">Dalai Lama</a>
-                    <a href="#" class="tag">Mutter Theresa</a>
+            
+            <!-- Comments section -->
+            <section class="comments">
+                <h3 class="comments-title">Kommentare</h3>
+                
+                <div class="comment">
+                    <div class="comment-meta">
+                        <span class="comment-author">Philosophiestudent</span>
+                        <span class="comment-date">27. Februar 2008, 14:32</span>
+                    </div>
+                    <div class="comment-content">
+                        <p>Interessanter Ansatz. Ich würde allerdings argumentieren, dass auch in Bereich A die Grundlagen nicht so klar sind, wie es zunächst scheint. Selbst in der Mathematik gibt es Axiome, die wir als gegeben annehmen müssen.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="post-content">
-                <p>Die dunkle Seite der Mutter Theresa und des Dalai Lama:</p>
-                <ul>
-                    <li><a href="http://atheistmedia.blogspot.com/2007/10/christopher-hitchens-hells-angel-mother.html">Hell's Angel: Mother Teresa (Christopher Hitchens, 2007)</a></li>
-                    <li><a href="http://daserste.ndr.de/panorama/media/dalailama74.html">Verklärt, verkitscht - Hollywood feiert den Dalai Lama (Panorama, 1997)</a></li>
-                    <li><a href="http://de.youtube.com/watch?v=igIBSeaJ9YI">John Safran: The Pope vs the Dalai Lama</a></li>
-                </ul>
-                <div class="post-source">Via: <a href="http://atheistmedia.blogspot.com/2007/10/christopher-hitchens-hells-angel-mother.html">atheistmedia.blogspot.com</a> & <a href="http://twitter.com/Doener/statuses/814144254">twitter.com/Doener</a><br>Related: <a href="http://morgen.blogage.de/article/2008/3/28/Martin-Luther#">Martin Luther - antisemitischer Vernunftgegner und Hexenprozessbefürworter</a></div>
-            </div>
-        </article>
-
-        <article class="post">
-            <h2 class="post-title">Die Zehn Gebote</h2>
-            <div class="post-meta">
-                <span class="post-date">22. Juli 2008</span>
-                <div class="post-tags">
-                    <a href="#" class="tag">Angela Merkel</a>
-                    <a href="#" class="tag">Christentum</a>
-                    <a href="#" class="tag">George Carlin</a>
-                    <a href="#" class="tag">Zehn Gebote</a>
+                
+                <div class="comment">
+                    <div class="comment-meta">
+                        <span class="comment-author">Morgen Freiman</span>
+                        <span class="comment-date">27. Februar 2008, 16:45</span>
+                    </div>
+                    <div class="comment-content">
+                        <p>@Philosophiestudent: Genau darauf weist ja auch der Hinweis auf das "Definitions-Trilemma" hin. Die Grundlagen in Bereich A sind nur dann klar, wenn wir uns auf bestimmte Axiome einigen. Diese Einigung ist aber letztlich willkürlich.</p>
+                        <p>Das ist auch der Grund, warum ich in der Fußnote anmerke, dass die Grundlagen in Bereich A nicht wirklich "klar" sind. Es ist eher so, dass wir in Bereich A die Unklarheit durch Konvention überdecken.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="post-content">
-                <p>«Die Zehn Gebote sind genauso unverzichtbares Fundament unseres gesellschaftlichen Zusammenlebens wie das Doppelgebot der Liebe.»</p>
-                <div class="post-source">Angela Merkel, laut <a href="http://www.sonntagsblatt-bayern.de/archiv01/36/woche3.htm">sonntagsblatt-bayern.de</a>, via <a href="http://www.dober.de/religionskritik/warumzit.html">dober.de</a></div>
-                <iframe width="425" height="344" src="https://www.youtube.com/embed/rCz0-HY1TLU" frameborder="0" allowfullscreen></iframe>
-                <div class="post-source">Related: <a href="http://morgen.blogage.de/article/2008/3/13/Kreatives-Anwenden-der-neuen-7-Suenden#">Applying the new seven sins</a></div>
-            </div>
-        </article>
-
-        <article class="post">
-            <h2 class="post-title">Jedi Commons</h2>
-            <div class="post-meta">
-                <span class="post-date">10. September 2008</span>
-                <div class="post-tags">
-                    <a href="#" class="tag">Creative Commons</a>
-                    <a href="#" class="tag">Die helle Seite der Macht</a>
-                    <a href="#" class="tag">Jedi</a>
-                    <a href="#" class="tag">Jedi Commons</a>
+                
+                <div class="comment">
+                    <div class="comment-meta">
+                        <span class="comment-author">Skeptiker</span>
+                        <span class="comment-date">1. März 2008, 09:15</span>
+                    </div>
+                    <div class="comment-content">
+                        <p>Ich finde die Unterscheidung zwischen A und B hilfreich, aber ich frage mich, ob es nicht auch Überschneidungen gibt. Selbst in der Physik arbeiten wir mit Modellen, die wir selbst definiert haben. Ist die Grenze wirklich so klar zu ziehen?</p>
+                    </div>
                 </div>
-            </div>
-            <div class="post-content">
-                <p>Ab sofort haben nur noch Jedi Ritter der hellen Seite der Macht meine Erlaubnis, die von mir produzierten Inhalte zu verbreiten bzw. Derivate davon zu erstellen:</p>
-                <p><a rel="license" href="https://d3v.at/jc/by-nc-sa/"><img alt="Jedi Commons License" style="border-width:0" src="http://blogage.de/files/6273/image?jedicommons.png" /></a></p>
-                <p>Ein breites Spektrum an jedifreundliche Lizenzmodelle finden sich unter <a href="https://d3v.at/jc/">d3v.at/jc/</a>.</p>
-                <div class="post-source">"Via": <a href="http://grueneslicht.blogage.de/">grueneslicht.blogage.de/</a></div>
-            </div>
-        </article>
-
-        <article class="post">
-            <h2 class="post-title">Prove that you don't actually live in virtual reality</h2>
-            <div class="post-meta">
-                <span class="post-date">4. April 2008</span>
-                <div class="post-tags">
-                    <a href="#" class="tag">Cyberspace</a>
-                    <a href="#" class="tag">Virtual Reality</a>
-                    <a href="#" class="tag">VR</a>
-                </div>
-            </div>
-            <div class="post-content">
-                <p>«[...] how can you prove that you don't actually live in virtual reality and that the year is really 2008? [...]» - <i>"Bored With Same All Same All"</i></p>
-                <p>«I suppose we could prove that it is a virtual world by upping our computer power to the point where the simulated computing power exceeds the power of the simulator. Then if we get lucky, the world could start to lag.» - <i>"Anonymous"</i></p>
-                <div class="post-source">Comments on: <a href="http://technology.newscientist.com/article/dn13585-matrixstyle-virtual-worlds-a-few-years-away.html">Matrix-style virtual worlds 'a few years away' (technology.newscientist.com)</a></div>
-            </div>
-        </article>
-
-        <article class="post">
-            <h2 class="post-title">Videoüberwachung</h2>
-            <div class="post-meta">
-                <span class="post-date">14. April 2008</span>
-                <div class="post-tags">
-                    <a href="#" class="tag">Fehlrezeption</a>
-                    <a href="#" class="tag">Videoüberwachung</a>
-                    <a href="#" class="tag">Ärztepfusch</a>
-                </div>
-            </div>
-            <div class="post-content">
-                <p>Wenn wir schon Videoüberwachung großflächiger einsetzen wollen, dann sollten wir die Operationssälen nicht außen vor lassen, denn "17.000 Menschen sterben nach Angaben des «Aktionsbündnis Patientensicherheit» jedes Jahr in deutschen Krankenhäusern, weil ein Klinikmitarbeiter einen Fehler (sic) gemacht hat."</p>
-                <div class="post-source">netzeitung.de: <a href="http://www.netzeitung.de/gesundheit/895277.html">Online-Beichtstuhl für Ärztepfusch</a>, 2008</div>
-            </div>
-        </article>
-
-        <article class="post">
-            <h2 class="post-title">Wie funktioniert Geld?</h2>
-            <div class="post-meta">
-                <span class="post-date">18. März 2008</span>
-                <div class="post-tags">
-                    <a href="#" class="tag">Debt</a>
-                    <a href="#" class="tag">Deflation</a>
-                    <a href="#" class="tag">Einheitswährung</a>
-                    <a href="#" class="tag">Geld</a>
-                    <a href="#" class="tag">Inflation</a>
-                    <a href="#" class="tag">Schulden</a>
-                    <a href="#" class="tag">Wirtschaft</a>
-                </div>
-            </div>
-            <div class="post-content">
-                <p><a href="http://www.youtube.com/watch?v=9BrLrwbkQWQ">Teil 1</a><br>
-                <a href="http://www.youtube.com/watch?v=aK2yZlHk4cA">Teil 2</a><br>
-                <a href="http://www.youtube.com/watch?v=0VOtdQrCoyk">Teil 3</a></p>
-                <div class="post-source">Hier eine detailiertere, auf Amerika gemünzte Variante, in englischer Sprache, mit deutschen Untertiteln: <a href="http://video.google.com/videoplay?docid=6433985877267580603&hl=de">Money as debt</a>.</div>
-            </div>
-        </article>
-
-        <article class="post">
-            <h2 class="post-title">Illegitimes Papsttum</h2>
-            <div class="post-meta">
-                <span class="post-date">8. März 2008</span>
-                <div class="post-tags">
-                    <a href="#" class="tag">Betrug</a>
-                    <a href="#" class="tag">Kirche</a>
-                    <a href="#" class="tag">Papst</a>
-                    <a href="#" class="tag">Papsttum</a>
-                    <a href="#" class="tag">Vatikan</a>
-                </div>
-            </div>
-            <div class="post-content">
-                <p>Die erste weltliche Legitimation des Papsttums erfolgte durch ein angeblich von Kaiser Konstantin ausgestelltes Dokument, worin er dem Papst Silvester und dessen Nachfolgern die Hoheit über die Stadt Rom und den gesamten Erdkreis (Urbi et orbi) übergab.</p>
-                <p>Dieses kurz nach der Erfindung des Konzepts "Papst" veröffentlichte und offensichtlich als Macht-Legitimation gedachte Dokument, bekannt als die "Konstantinische Schenkung", stellte sich jedoch Jahrunderte später als Fälschung herraus.</p>
-                <p>Es fallen, gemäß dieser Darstellung, hier somit zwei wichtige Ereignisse der Kirchengeschichte zusammen: die Begründung des Papsttums und die wohl erste weltliche Lüge unter ihm.</p>
-                <div class="post-source">Quelle: Gerald Drews und Pat Lauer, Allgemeinbildung für Angeber, Obris Verlag, 2003</div>
-            </div>
-        </article>
-
-        <article class="post">
-            <h2 class="post-title">Aberglaube</h2>
-            <div class="post-meta">
-                <span class="post-date">23. März 2008</span>
-                <div class="post-tags">
-                    <a href="#" class="tag">Aberglaube</a>
-                    <a href="#" class="tag">Religion</a>
-                </div>
-            </div>
-            <div class="post-content">
-                <p>Ob nun Salz über die Schulter geworfen wird oder ob Hostien verteilt werden, in der Hoffnung bestimmte Ereignisse zu vermeiden oder zu induzieren werden Handlungen vollführt, die bisher keinen ermpirisch nachweisbaren Nutzen aufwiesen.</p>
-            </div>
-        </article>
-
-        <article class="post">
-            <h2 class="post-title">Complexity proves...</h2>
-            <div class="post-meta">
-                <span class="post-date">10. Juni 2008</span>
-                <div class="post-tags">
-                    <a href="#" class="tag">Complexity</a>
-                    <a href="#" class="tag">Divine Creator</a>
-                    <a href="#" class="tag">Love</a>
-                    <a href="#" class="tag">Science</a>
-                    <a href="#" class="tag">Soul</a>
-                </div>
-            </div>
-            <div class="post-content">
-                <p><a href="http://blogage.de/files/3595/image?complexity+proves+creator.png" rel="lightbox"><img alt="Thumbnail?complexity+proves+creator" src="http://blogage.de/files/3595/thumbnail?complexity+proves+creator.png" /></a></p>
-                <p><a href="http://blogage.de/files/3593/image?can+it+be+source+code+alone.png" rel="lightbox"><img alt="Thumbnail?can+it+be+source+code+alone" src="http://blogage.de/files/3593/thumbnail?can+it+be+source+code+alone.png" /></a></p>
-                <div class="post-source">Done by: <a href="http://cectic.com/">cectic.com</a><br>Related: <a href="http://morgen.blogage.de/article/2008/5/5/Aspirin-plus-prayer#">Aspirin plus prayer...</a></div>
-            </div>
-        </article>
-
-        <article class="post">
-            <h2 class="post-title">Aspirin plus prayer...</h2>
-            <div class="post-meta">
-                <span class="post-date">5. Mai 2008</span>
-                <div class="post-tags">
-                    <a href="#" class="tag">Belief</a>
-                    <a href="#" class="tag">Empiricism</a>
-                    <a href="#" class="tag">Religion</a>
-                    <a href="#" class="tag">Science</a>
-                    <a href="#" class="tag">Self-deception</a>
-                </div>
-            </div>
-            <div class="post-content">
-                <p><a href="http://blogage.de/files/3591/image?aspirin+and+prayer.png" rel="lightbox"><img alt="Thumbnail?aspirin+and+prayer" src="http://blogage.de/files/3591/thumbnail?aspirin+and+prayer.png" /></a></p>
-                <p><a href="http://blogage.de/files/3592/image?why+not+letting+them+believe.png" rel="lightbox"><img alt="Thumbnail?why+not+letting+them+believe" src="http://blogage.de/files/3592/thumbnail?why+not+letting+them+believe.png" /></a></p>
-                <div class="post-source">Done by: <a href="http://cectic.com">cectic.com</a></div>
-            </div>
-        </article>
-
-        <article class="post">
-            <h2 class="post-title">Meat, junkfood, cheese ...</h2>
-            <div class="post-meta">
-                <span class="post-date">23. Mai 2008</span>
-                <div class="post-tags">
-                    <a href="#" class="tag">Environment</a>
-                    <a href="#" class="tag">Meat</a>
-                    <a href="#" class="tag">Pollution</a>
-                </div>
-            </div>
-            <div class="post-content">
-                <p>"[…] <b>meat</b>, junkfood, cheese - the very stuff that will kill you." - <i>Mark Bittman (00:14:45)</i></p>
-                <iframe width="432" height="285" src="https://www.youtube.com/embed/bZw6NpIZCrY" frameborder="0" allowfullscreen></iframe>
-                <p>"30 % of the earths land surface is directly or indirectly devoted to rasing the animals we'll eat." - <i>Mark Bittman (00:16:40)</i></p>
-                <div class="post-source">Via: <a href="http://atheistmedia.blogspot.com/2008/05/mark-bittman-whats-wrong-with-what-we.html">atheistmedia.blogspot.com</a><br>Related: <a href="http://morgen.blogage.de/article/2008/3/18/Cruelty-Free-Bacon#">Cruelty-Free Bacon</a> & <a href="http://latimesblogs.latimes.com/booster_shots/2008/05/what-shall-we-b.html">Obesity as a cause of global warming? (Los Angeles Times, 2008)</a></div>
-            </div>
-        </article>
-
-        <article class="post">
-            <h2 class="post-title">The Buckminster Fuller Challenge</h2>
-            <div class="post-meta">
-                <span class="post-date">14. Juni 2008</span>
-                <div class="post-tags">
-                    <a href="#" class="tag">Buckminster Fuller</a>
-                </div>
-            </div>
-            <div class="post-content">
-                <p>«Bucky had it right. "You never change things by fighting the existing reality. To change something, build a new model that makes the existing model obsolete."<br><br>That's why we're <a href="http://challenge.bfi.org">awarding a $100,000 prize each year</a> for comprehensive solutions that radically advance human well-being and ecosystem health. <a href="http://challenge.bfi.org/prize/winner_2008.php">The 2008 prize</a> will be conferred June 23rd in NYC.» <i>- <a href="http://bfi.org/">BFI</a></i></p>
-                <p><b><a href="http://challenge.bfi.org/ideaindex">Database of entries</a></b> to the 2008 Buckminster Fuller Challenge.</p>
-                <iframe width="485" height="366" src="https://player.vimeo.com/video/1163719" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </article>
-
-        <article class="post">
-            <h2 class="post-title">Atheist Apocalypse</h2>
-            <div class="post-meta">
-                <span class="post-date">17. März 2008</span>
-                <div class="post-tags">
-                    <a href="#" class="tag">Agnosticism</a>
-                    <a href="#" class="tag">Apocalypse</a>
-                    <a href="#" class="tag">Atheism</a>
-                    <a href="#" class="tag">Comic</a>
-                    <a href="#" class="tag">Science</a>
-                    <a href="#" class="tag">The Four Horsemen</a>
-                </div>
-            </div>
-            <div class="post-content">
-                <p><a href="http://www.viruscomix.com/page433.html"><img src="http://blogage.de/files/2532/image?Atheist+Apocalypse.jpg" alt="Atheist Apocalypse" /></a></p>
-                <div class="post-source">Done by: <a href="http://www.viruscomix.com/">viruscomix.com</a><br>Via: <a href="http://planetatheism.com/">planetatheism.com</a><br>Related: <a href="http://richarddawkins.net/fourhorsementranscript">The Four Horsemen (richarddawkins.net)</a></div>
-            </div>
-        </article>
-
-        <article class="post">
-            <h2 class="post-title">Petition Grundeinkommen</h2>
-            <div class="post-meta">
-                <span class="post-date">16. Februar 2009</span>
-                <div class="post-tags">
-                    <a href="#" class="tag">Grundeinkommen</a>
-                    <a href="#" class="tag">Petition</a>
-                </div>
-            </div>
-            <div class="post-content">
-                <p>Ich bin leider nicht ganz so zuversichtlich, dass das noch was wird (Ende der Petition: Morgen) und den Petitonstext finde ich nicht gut (schwach in Form und Inhalt) aber dennoch: <a href="https://epetitionen.bundestag.de/index.php?action=petition;sa=details;petition=1422">https://epetitionen.bundestag.de/index.php?action=petition;sa=details;petition=1422</a></p>
-            </div>
-        </article>
-
-        <article class="post">
-            <h2 class="post-title">Ich will ehrlich zu Dir sein...</h2>
-            <div class="post-meta">
-                <span class="post-date">1. März 2009</span>
-                <div class="post-tags">
-                    <a href="#" class="tag">Lügen</a>
-                    <a href="#" class="tag">Paradox</a>
-                </div>
-            </div>
-            <div class="post-content">
-                <p>«Ich will ehrlich zu Dir sein: ich lüge ab und an.»</p>
-                <div class="post-source">Related: <a href="http://sofias.soup.io/post/13914979/Image">sofias.soup.io</a></div>
-            </div>
-        </article>
-
-        <article class="post">
-            <h2 class="post-title">Even if you're as brilliant as Newton...</h2>
-            <div class="post-meta">
-                <span class="post-date">31. Mai 2008</span>
-                <div class="post-tags">
-                    <a href="#" class="tag">Belief</a>
-                    <a href="#" class="tag">New Paradigm</a>
-                    <a href="#" class="tag">Religion</a>
-                    <a href="#" class="tag">Science</a>
-                </div>
-            </div>
-            <div class="post-content">
-                <p>«[...] something fundamental thats going on in peoples minds when they confront things they don't understand. And it happens to the greatest of the minds as it happens to every one else - many if not most people in the public.» (00:22:30)</p>
-                <p>«What concerns me now is: even if you're as brilliant as Newton you reach a point where you start basking in the majesty of god and then your discovery stops. It just stops. You're kind of no good anymore for advancing that frontier waiting for somebody else to come behind you who doesn't has god on the brain and who says: "That's a really cool problem I want to solve it."» (00:20:50)</p>
-                <p>«An article on that data recently in nature. It said 85% of the national academy [of sciences] reject a personal god and then they compare it to 90% of the public [who believe in god]. You know thats not the story there. They missed the story. What that article should have said is: "How come this number isn't zero?"» (00:13:10)</p>
-                <p><small>00:32:10 Stupid Design - The "design" of the world is not the best you can think of.</small></p>
-                <p>«... republicans above all else do not want to die poor. So there is a limit to how far this [intelligent design movement] will go. [...] I'm not worried because it's a republican judge [in reference to the <a href="http://en.wikipedia.org/wiki/Dover_trial">dover trial</a>]. And [...] if you put people who are not making discoveries in the science classroom that is the end of your future economy.» (00:38:22)</p>
-                <p><small>01:04:00 Sam Harris: false dichtonomy: love - reason</small></p>
-                <div class="post-source">Neil deGrasse Tyson, <a href="http://thesciencenetwork.org/BeyondBelief/">Beyond Belief</a>, <a href="http://thesciencenetwork.org/BeyondBelief/watch/watch.php?Video=Session%202">Session II</a></div>
-                <iframe width="400" height="326" src="https://www.youtube.com/embed/275693092937060684" frameborder="0" allowfullscreen></iframe>
-                <div class="post-source">Related: <a href="http://www.stephenjaygould.org/ctrl/news/file002.html">Leading scientists still reject God (Nature; stephenjaygould.org)</a></div>
-            </div>
-        </article>
-
-        <article class="post">
-            <h2 class="post-title">Die erisische Erkenntnis</h2>
-            <div class="post-meta">
-                <span class="post-date">22. Februar 2008</span>
-                <div class="post-tags">
-                    <a href="#" class="tag">Erisisch</a>
-                </div>
-            </div>
-            <div class="post-content">
-                <p><a href="http://erisisch.de"><img src="http://blogage.de/files/9495/image?jonglieren.gif" /></a></p>
-                <div class="post-source">Quelle: projektpan.de Forum</div>
-            </div>
-        </article>
-
-        <article class="post">
-            <h2 class="post-title">Der Glaube an nichts ist kein Glaube</h2>
-            <div class="post-meta">
-                <span class="post-date">29. Juli 2008</span>
-                <div class="post-tags">
-                    <a href="#" class="tag">Glaube</a>
-                    <a href="#" class="tag">Religion</a>
-                </div>
-            </div>
-            <div class="post-content">
-                <p>Glaube definiert sich über eine Referenz auf etwas. Person A glaubt an X, bzw. anders ausgedrückt A hält X für wahr, wobei X eine beliebige Behauptung ist.</p>
-                <p>Wenn man an nichts glaubt fehlt jedoch das Etwas, worauf der Glaube referenzieren könnte. Es ist also ein Glaube ohne Inhalt oder anders ausgedrückt, es ist kein Glaube vorhanden.</p>
-                <p>Oder wer würde argumentieren wollen, dass ein Kabel, das an nichts angeschlossen ist, also nicht angeschlossen ist, sehr wohl angeschlossen ist.</p>
-            </div>
-        </article>
-
-        <article class="post">
-            <h2 class="post-title">Nur wer zweifelt...</h2>
-            <div class="post-meta">
-                <span class="post-date">6. April 2008</span>
-                <div class="post-tags">
-                    <a href="#" class="tag">Gewissen</a>
-                    <a href="#" class="tag">Zweifel</a>
-                </div>
-            </div>
-            <div class="post-content">
-                <p>Nur wer zweifelt hat ein Gewissen.</p>
-            </div>
-        </article>
-
-        <article class="post">
-            <h2 class="post-title">Guter, böser, allmächtiger Gott</h2>
-            <div class="post-meta">
-                <span class="post-date">25. April 2008</span>
-                <div class="post-tags">
-                    <a href="#" class="tag">Allmacht</a>
-                    <a href="#" class="tag">Christentum</a>
-                    <a href="#" class="tag">Gott</a>
-                </div>
-            </div>
-            <div class="post-content">
-                <p>«Gott soll gut sein? Wie erklärst du dir dann das ganze Leid in der Welt?»</p>
-                <p>«Na, weißt du, Gott will uns Freiraum lassen. Stell dir vor, du hättest ein Kind. So lange es klein ist leitest und führst du es. Doch dann kommt der Moment, wo du loslassen und dein Kind seine eigenen Erfahrungen machen lassen musst - wie soll dein Kind denn sonst Erwachsen und ein eigenständiger Mensch werden?»</p>
-                <p>«Dann müsste Gott doch absolut Böse sein, ohne das kleinste Anzeichen von Liebe und Zuneigung!»</p>
-                <p>«Warum denn das?»</p>
-                <p>«Na, könnte er uns nicht unsere eigenen Erfahrungen machen lassen und uns dennoch das Leid ersparen wäre er doch nicht allmächtig! Er lässt uns also absichtlich in dieser Misere!»</p>
-                <p>«Jetzt überleg doch mal: ohne Schatten kannst du doch kein Licht wahrnehmen. Wir brauchen die unangenehmen Erfahrungen um die guten Wertschätzen zu können.»</p>
-                <p>«Wenn Gott die Welt nicht so gestalten kann, dass wir Licht ohne Schatten erfahren können, warum nennst du ihn dann allmächtig?»</p>
-            </div>
-        </article>
-
-        <article class="post">
-            <h2 class="post-title">Fastfood und Theologie</h2>
-            <div class="post-meta">
-                <span class="post-date">25. Juni 2009</span>
-                <div class="post-tags">
-                    <a href="#" class="tag">Atheisten</a>
-                    <a href="#" class="tag">Fastfood</a>
-                    <a href="#" class="tag">Gott</a>
-                    <a href="#" class="tag">Theologie</a>
-                </div>
-            </div>
-            <div class="post-content">
-                <p>«Ich finde es doch immer wieder erstaunlich, dass die sogenannten Atheisten sich so ausführlich mit Gott beschäftigen. Mir scheint deren Interesse an Gott größer zu sein, als sie zugeben wollen.»</p>
-                <p>«Da kann ich dich beruhigen: Das spricht sicher nicht für das versteckte Verlangen zu einem Glauben zu finden. Oder würdest du Leuten, die gerne Fast-Food essen unterstellen, dass sie eigentlich gerne dick werden wollen?»</p>
-                <div class="post-source">Angestoßen durch: Manfred Lütz in irgend einer Talkshow</div>
-            </div>
-        </article>
-
-        <article class="post">
-            <h2 class="post-title">Es gibt Harry Potter wirklich...</h2>
-            <div class="post-meta">
-                <span class="post-date">9. Juli 2009</span>
-                <div class="post-tags">
-                    <a href="#" class="tag">Harry Potter</a>
-                    <a href="#" class="tag">Jesus</a>
-                </div>
-            </div>
-            <div class="post-content">
-                <p>Nehmen wir an, die Autorin kannte einen Jungen, der Harry Potter hieß. Würde allein das Wissen um diese Bekanntschaft reichen, um behaupten zu können, dass Harry Potter tatsächlich existierte?</p>
-                <p>Würden wir es behaupten, wenn die Autorin tatsächlich versucht hätte, die Charaktereigenschaften von Harry wahrheitsgetreu wiederzugeben? Würden wir es, wenn einige Ereignisse tatsächlich statt gefunden hätten?</p>
-                <p>Noch einmal angenommen, wir würden nur wissen, dass die Autorin einen Harry Potter kannte. Würden wir dann sagen, dass die frühere Existenz Potters die Aussage glaubwürdiger macht, dass die Ereignisse in dem Buch tatsächlich statt gefunden haben?</p>
-            </div>
-        </article>
-
-        <article class="post">
-            <h2 class="post-title">I say ...</h2>
-            <div class="post-meta">
-                <span class="post-date">23. Dezember 2008</span>
-                <div class="post-tags">
-                    <a href="#" class="tag">Agnosticism</a>
-                    <a href="#" class="tag">Atheism</a>
-                    <a href="#" class="tag">God</a>
-                    <a href="#" class="tag">Humanism</a>
-                </div>
-            </div>
-            <div class="post-content">
-                <p>«I say: let humanity be informed by science, inspired by art and motivated by compassion for all living beeings. There is no god!»</p>
-                <div class="post-source"><a href="http://www.youtube.com/watch?v=bZw6NpIZCrY">The Atheist Monologues</a> (Video)</div>
-            </div>
-        </article>
-
-        <article class="post">
-            <h2 class="post-title">Das Springender-Jesus Phänomen</h2>
-            <div class="post-meta">
-                <span class="post-date">13. Mai 2008</span>
-                <div class="post-tags">
-                    <a href="#" class="tag">Fortschritt</a>
-                    <a href="#" class="tag">Jesus</a>
-                    <a href="#" class="tag">Jumping Jesus</a>
-                    <a href="#" class="tag">Springender Jesus</a>
-                </div>
-            </div>
-            <div class="post-content">
-                <p>Alle wichtigen Leute sind Namensgeber für Maßeinheiten.</p>
-                <p>Springende Jesus (SJ; engl. "jumping jesus") ist eine Maßeinheit für Informationen. Der Beginn der christlichen Ära dient als Startpunkt der Skala: die Informationsmenge zum Jahr 1 AD wird auf den numerischen Wert 1 festgelegt - 1 springender Jesus.</p>
-                <p>1500 AD hatte sich die ursprüngliche Informationsmenge erstmalig verdoppelt: 2 SJ.</p>
-                <p>250 Jahre später, 1750 AD, fand dann die nächste Informationsmengenverdopplung statt: 4 SJ.</p>
-                <p>150 Jahre später, 1900 AD, die nächste Verdopplung: 8 SJ.</p>
-                <p>50 Jahre später, 1950 AD, die nächste: 16 SJ.</p>
-                <p>10 Jahre, 1960 AD: 32 SJ.</p>
-                <p>7 Jahre, 1967 AD: 64 SJ.</p>
-                <p>6 Jahre, 1973 AD: 128 SJ.</p>
-                <p>Und hier reißen die mir vorliegenden Daten ab. Der französische Ökonom Georges Anderla, der diese Schätzungen für die "Organization for Economic Cooperation and Development" 1973 anfertigte, beendete an diesem Punkt seine Studie.</p>
-                <p>Dr. Alvin Silverstein gab eine Schätzung ab, nach der sich die Informationsmenge bis in 70 Jahren, ausgehend vom Jahr 1973, millionenfach vergrößert haben soll - 2043 AD: 128.000.000 springende Jesus.</p>
-                <div class="post-source">Quelle: Robert Anton Wilson - Prometheus Rising</div>
-            </div>
-        </article>
-    	<!-- 1 -->
-        <article class="post">
-            <h2 class="post-title">Der Glaube an nichts ist kein Glaube</h2>
-            <div class="post-meta">
-                <span class="post-date">29. Juli 2008</span>
-                <div class="post-tags">
-                    <a href="#" class="tag">Glaube</a>
-                    <a href="#" class="tag">Religion</a>
-                </div>
-            </div>
-            <div class="post-content">
-                <p>Glaube definiert sich über eine Referenz auf etwas. Person A glaubt an X, bzw. anders ausgedrückt A hält X für wahr, wobei X eine beliebige Behauptung ist.</p>
-                <p>Wenn man an nichts glaubt fehlt jedoch das Etwas, worauf der Glaube referenzieren könnte. Es ist also ein Glaube ohne Inhalt oder anders ausgedrückt, es ist kein Glaube vorhanden.</p>
-                <p>Oder wer würde argumentieren wollen, dass ein Kabel, das an nichts angeschlossen ist, also nicht angeschlossen ist, sehr wohl angeschlossen ist.</p>
-            </div>
-        </article>
-
-        <article class="post">
-            <h2 class="post-title">Nur wer zweifelt...</h2>
-            <div class="post-meta">
-                <span class="post-date">6. April 2008</span>
-                <div class="post-tags">
-                    <a href="#" class="tag">Gewissen</a>
-                    <a href="#" class="tag">Zweifel</a>
-                </div>
-            </div>
-            <div class="post-content">
-                <p>Nur wer zweifelt hat ein Gewissen.</p>
-            </div>
-        </article>
-
-        <article class="post">
-            <h2 class="post-title">Guter, böser, allmächtiger Gott</h2>
-            <div class="post-meta">
-                <span class="post-date">25. April 2008</span>
-                <div class="post-tags">
-                    <a href="#" class="tag">Allmacht</a>
-                    <a href="#" class="tag">Christentum</a>
-                    <a href="#" class="tag">Gott</a>
-                </div>
-            </div>
-            <div class="post-content">
-                <p>«Gott soll gut sein? Wie erklärst du dir dann das ganze Leid in der Welt?»</p>
-                <p>«Na, weißt du, Gott will uns Freiraum lassen. Stell dir vor, du hättest ein Kind. So lange es klein ist leitest und führst du es. Doch dann kommt der Moment, wo du loslassen und dein Kind seine eigenen Erfahrungen machen lassen musst - wie soll dein Kind denn sonst Erwachsen und ein eigenständiger Mensch werden?»</p>
-                <p>«Dann müsste Gott doch absolut Böse sein, ohne das kleinste Anzeichen von Liebe und Zuneigung!»</p>
-                <p>«Warum denn das?»</p>
-                <p>«Na, könnte er uns nicht unsere eigenen Erfahrungen machen lassen und uns dennoch das Leid ersparen wäre er doch nicht allmächtig! Er lässt uns also absichtlich in dieser Misere!»</p>
-                <p>«Jetzt überleg doch mal: ohne Schatten kannst du doch kein Licht wahrnehmen. Wir brauchen die unangenehmen Erfahrungen um die guten Wertschätzen zu können.»</p>
-                <p>«Wenn Gott die Welt nicht so gestalten kann, dass wir Licht ohne Schatten erfahren können, warum nennst du ihn dann allmächtig?»</p>
-            </div>
-        </article>
-
-        <article class="post">
-            <h2 class="post-title">Fastfood und Theologie</h2>
-            <div class="post-meta">
-                <span class="post-date">25. Juni 2009</span>
-                <div class="post-tags">
-                    <a href="#" class="tag">Atheisten</a>
-                    <a href="#" class="tag">Fastfood</a>
-                    <a href="#" class="tag">Gott</a>
-                    <a href="#" class="tag">Theologie</a>
-                </div>
-            </div>
-            <div class="post-content">
-                <p>«Ich finde es doch immer wieder erstaunlich, dass die sogenannten Atheisten sich so ausführlich mit Gott beschäftigen. Mir scheint deren Interesse an Gott größer zu sein, als sie zugeben wollen.»</p>
-                <p>«Da kann ich dich beruhigen: Das spricht sicher nicht für das versteckte Verlangen zu einem Glauben zu finden. Oder würdest du Leuten, die gerne Fast-Food essen unterstellen, dass sie eigentlich gerne dick werden wollen?»</p>
-                <div class="post-source">Angestoßen durch: Manfred Lütz in irgend einer Talkshow</div>
-            </div>
-        </article>
-
-        <article class="post">
-            <h2 class="post-title">Es gibt Harry Potter wirklich...</h2>
-            <div class="post-meta">
-                <span class="post-date">9. Juli 2009</span>
-                <div class="post-tags">
-                    <a href="#" class="tag">Harry Potter</a>
-                    <a href="#" class="tag">Jesus</a>
-                </div>
-            </div>
-            <div class="post-content">
-                <p>Nehmen wir an, die Autorin kannte einen Jungen, der Harry Potter hieß. Würde allein das Wissen um diese Bekanntschaft reichen, um behaupten zu können, dass Harry Potter tatsächlich existierte?</p>
-                <p>Würden wir es behaupten, wenn die Autorin tatsächlich versucht hätte, die Charaktereigenschaften von Harry wahrheitsgetreu wiederzugeben? Würden wir es, wenn einige Ereignisse tatsächlich statt gefunden hätten?</p>
-                <p>Noch einmal angenommen, wir würden nur wissen, dass die Autorin einen Harry Potter kannte. Würden wir dann sagen, dass die frühere Existenz Potters die Aussage glaubwürdiger macht, dass die Ereignisse in dem Buch tatsächlich statt gefunden haben?</p>
-            </div>
-        </article>
-
-        <article class="post">
-            <h2 class="post-title">I say ...</h2>
-            <div class="post-meta">
-                <span class="post-date">23. Dezember 2008</span>
-                <div class="post-tags">
-                    <a href="#" class="tag">Agnosticism</a>
-                    <a href="#" class="tag">Atheism</a>
-                    <a href="#" class="tag">God</a>
-                    <a href="#" class="tag">Humanism</a>
-                </div>
-            </div>
-            <div class="post-content">
-                <p>«I say: let humanity be informed by science, inspired by art and motivated by compassion for all living beeings. There is no god!»</p>
-                <div class="post-source"><a href="http://www.youtube.com/watch?v=bZw6NpIZCrY">The Atheist Monologues</a> (Video)</div>
-            </div>
+            </section>
         </article>
     </main>
 
